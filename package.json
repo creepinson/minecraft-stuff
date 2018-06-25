@@ -3,16 +3,19 @@
   "version": "1.0.0",
   "description": "Lets you move around in minecraft and many more things.",
   "main": "index.js",
-  "scripts": {
-    "mc-walkaround": "node minecraftwalkaround.js"
+  "bin": {
+    "mcstuff-walkforward": "minecraftwalkforward.js"
   },
   "author": "Creepinson",
   "license": "ISC",
   "devDependencies": {
     "kbm-robot": "0.0.4"
   },
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/creepinson/minecraft-stuff.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/creepinson/minecraft-stuff.git"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.2"
   }
 }

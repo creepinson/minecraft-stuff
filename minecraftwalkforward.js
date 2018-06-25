@@ -1,3 +1,4 @@
+#! /user/bin/env node
 'use strict';
 
 var utils = require('./utils.js');
