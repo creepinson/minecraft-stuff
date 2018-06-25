@@ -1,6 +1,4 @@
-#! /user/bin/env node
 'use strict';
-
 var utils = require('./utils.js');
 	function walkforward(msPerActivation){
 		console.info("Starting robot for key presses...");
@@ -19,7 +17,6 @@ var utils = require('./utils.js');
 	}
 if(process.argv[2] != null){
 	walkforward(process.argv[2]);
-	return;
 } else {
 	console.error("Please enter the required argument - the amount of milliseconds to walk forward for.");
 }

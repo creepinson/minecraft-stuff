@@ -1,10 +1,13 @@
 {
   "name": "minecraft-stuff",
-  "version": "1.0.0",
+  "version": "1.0.1-2",
   "description": "Lets you move around in minecraft and many more things.",
   "main": "index.js",
   "bin": {
-    "mcstuff-walkforward": "minecraftwalkforward.js"
+    "mcstuff-walkforward": "bin/mcstuff-walkforward.js"
+  },
+  "scripts": {
+    "mcstuff-walkforward": "mcstuff-walkforward"
   },
   "author": "Creepinson",
   "license": "ISC",
@@ -16,6 +19,7 @@
     "url": "https://github.com/creepinson/minecraft-stuff.git"
   },
   "dependencies": {
+    "kbm-robot": "0.0.4",
     "shelljs": "^0.8.2"
   }
 }
