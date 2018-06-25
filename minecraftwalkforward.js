@@ -1,4 +1,4 @@
-'use strict';
+#!/usr/bin/env node
 var utils = require('./utils.js');
 var ps = require('ps-node');
 var shell = require("shelljs");

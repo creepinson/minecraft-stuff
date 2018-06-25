@@ -1,13 +1,10 @@
 {
   "name": "minecraft-stuff",
-  "version": "1.0.1-7",
+  "version": "1.0.1-8",
   "description": "Lets you move around in minecraft and many more things.",
   "main": "index.js",
   "bin": {
-    "mcstuff-walkforward": "bin/mcstuff-walkforward.js"
-  },
-  "scripts": {
-    "mcstuff-walkforward": "mcstuff-walkforward"
+    "mcstuff-walkforward": "./minecraftwalkforward.js"
   },
   "author": "Creepinson",
   "license": "ISC",
