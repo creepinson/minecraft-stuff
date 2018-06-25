@@ -1,4 +1,5 @@
 var robot = require("kbm-robot");
+
 module.exports = {
 	pressKey: function(key, msPerTime) {
 		robot.startJar();
