@@ -4,27 +4,7 @@ var ps = require('ps-node');
 var shell = require("shelljs");
 	function walkforward(msPerActivation, mcversion){
 		console.info("Starting robot for key presses...");
-		console.info("Switching windows to Minecraft...");
-		
-		if(process.platform=="darwin"){
-			ps.lookup({
-			command: 'javaw',
-			}, function(err, resultList ) {
-				if (err) {
-						throw new Error( err );
-				}
-
-				resultList.forEach(function( prss ){
-					if( prss ){
-							 var script = "run script \"set theTitle to \"Minecraft " + mcversion + "\" \n tell application \"System Events\" \n    tell process \"appIT\" \n        set frontmost to true \n        perform action \"AXRaise\" of (windows whose title is theTitle) \n    end tell \n    end tell \"";
-							 shell.exec("osascript " + script);
-							 return;
-					} else {
-						console.log("No minecraft process found!");
-					}
-				});
-		});
-		}
+		console.info("If you are using Microsoft Windows, please switch your current application shown on-screen to Minecraft.");
 		
 		setTimeout(function () {
 			console.info("Walking forward in 5 seconds. ");
